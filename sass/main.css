@@ -54,6 +54,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 6rem 13rem;
+  padding-bottom: 8rem;
 }
 
 .nav__logo {
