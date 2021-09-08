@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "tools/_variables.scss",
+        "tools/_mixins.scss",
+        "tools/_utilities.scss",
+        "_base.scss",
+        "_layout.scss",
+        "sections/_nav.scss",
+        "sections/_header.scss",
+        "sections/_statistics.scss",
+        "sections/_boost.scss",
+        "sections/_footer.scss",
+        "components/_buttons.scss",
+        "components/_link-shorten.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
