@@ -38,6 +38,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1.8rem;
+  line-height: 1.7;
 }
 
 .nav {
@@ -90,6 +91,55 @@ body {
   color: #232127;
 }
 
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: start;
+  -ms-grid-columns: 13rem (minmax(min-content, 47%))[2] 1fr;
+      grid-template-columns: 13rem repeat(2, minmax(-webkit-min-content, 47%)) 1fr;
+      grid-template-columns: 13rem repeat(2, minmax(min-content, 47%)) 1fr;
+  -ms-grid-rows: 23rem 12rem 1fr;
+      grid-template-rows: 23rem 12rem 1fr;
+}
+
+.header__tagline, .header__text, .header__button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+}
+
+.header__tagline {
+  font-size: 7.2rem;
+  color: #35323e;
+  font-weight: 700;
+  line-height: 1.15;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.header__text {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #9e9aa7;
+  max-width: 90%;
+}
+
+.header__button {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.header__illustration {
+  grid-column: 3 / -1;
+  grid-row: 1 / -1;
+}
+
 button {
   outline: none;
   border: none;
@@ -111,5 +161,10 @@ button {
 
 .nav__right--signup {
   font-size: 1.8rem;
+}
+
+.header__button {
+  font-size: 2rem;
+  padding: 1.5rem 4.5rem;
 }
 /*# sourceMappingURL=main.css.map */

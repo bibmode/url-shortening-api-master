@@ -1,0 +1,41 @@
+.header {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+
+  grid-template-columns:
+    13rem repeat(2, minmax(min-content, 47%))
+    1fr;
+  grid-template-rows: 23rem 12rem 1fr;
+
+  &__tagline,
+  &__text,
+  &__button {
+    grid-column: 2 / span 1;
+  }
+
+  &__tagline {
+    font-size: 7.2rem;
+    color: $color-dark-blue;
+    font-weight: 700;
+    line-height: 1.15;
+    align-self: end;
+  }
+
+  &__text {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: $color-gray-violet;
+    max-width: 90%;
+  }
+
+  &__button {
+    align-self: start;
+    justify-self: start;
+  }
+
+  &__illustration {
+    grid-column: 3 / -1;
+    grid-row: 1 / -1;
+  }
+}

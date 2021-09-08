@@ -24,3 +24,10 @@ button {
     }
   }
 }
+
+.header {
+  &__button {
+    font-size: 2rem;
+    padding: 1.5rem 4.5rem;
+  }
+}
