@@ -183,6 +183,7 @@ body {
   font-size: 1.8rem;
   width: 37%;
   color: #9e9aa7;
+  margin-bottom: 4.5rem;
 }
 
 button {
@@ -272,5 +273,103 @@ button {
   font-size: 2.1rem;
   border-radius: 1.2rem;
   padding-inline: 3.5rem;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10.5rem (min-content)[3] 10.5rem;
+      grid-template-columns: 10.5rem repeat(3, -webkit-min-content) 10.5rem;
+      grid-template-columns: 10.5rem repeat(3, min-content) 10.5rem;
+  grid-column-gap: 3rem;
+  width: 100%;
+  margin-block: 8rem;
+  position: relative;
+}
+
+.cards::before {
+  content: "";
+  width: 100%;
+  height: 1rem;
+  background-color: #2acfcf;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  position: absolute;
+  top: 42%;
+}
+
+.card {
+  background-color: #fff;
+  width: calc((100vw - ((10.5rem * 2) + (3rem * 4))) / 3);
+  padding: 4rem 3.2rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 0;
+  text-align: left;
+  border-radius: 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card--1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+}
+
+.card--2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / span 1;
+  margin-top: 4rem;
+}
+
+.card--3 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / span 1;
+  margin-top: 8rem;
+}
+
+.card__logo {
+  background-color: #232127;
+  background-size: contain;
+  padding: 2rem;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #232127;
+  padding: 7rem 0;
+  padding-bottom: 1rem;
+}
+
+.card__text {
+  font-size: 1.6rem;
+  color: #9e9aa7;
 }
 /*# sourceMappingURL=main.css.map */
