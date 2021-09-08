@@ -1,0 +1,44 @@
+.app {
+  width: 100%;
+  min-height: 20rem;
+  height: max-content;
+  background-color: $color-light-gray;
+}
+
+.link-shorten {
+  margin: 0 13rem;
+  height: max-content;
+  padding-block: 5rem;
+  background-image: url(../images/bg-shorten-desktop.svg);
+  background-color: $color-violet;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__field {
+    width: 65%;
+    padding: 1.8rem 3.5rem;
+    border-radius: 1.2rem;
+    border: none;
+    outline: none;
+    font-size: 2.1rem;
+    font-family: $font-main;
+    color: $color-dark-blue;
+    margin-right: 2.5rem;
+
+    &::placeholder {
+      color: $color-gray-violet;
+    }
+  }
+
+  &__btn {
+    align-self: stretch;
+    font-size: 2.1rem;
+    border-radius: 1.2rem;
+    padding-inline: 3.5rem;
+  }
+}

@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -103,6 +103,7 @@ body {
       grid-template-columns: 13rem repeat(2, minmax(min-content, 47%)) 1fr;
   -ms-grid-rows: 23rem 12rem 1fr;
       grid-template-rows: 23rem 12rem 1fr;
+  padding-bottom: 16rem;
 }
 
 .header__tagline, .header__text, .header__button {
@@ -139,6 +140,75 @@ body {
 .header__illustration {
   grid-column: 3 / -1;
   grid-row: 1 / -1;
+}
+
+.app {
+  width: 100%;
+  min-height: 20rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #eff0f5;
+}
+
+.link-shorten {
+  margin: 0 13rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-block: 5rem;
+  background-image: url(../images/bg-shorten-desktop.svg);
+  background-color: #3b3054;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link-shorten__field {
+  width: 65%;
+  padding: 1.8rem 3.5rem;
+  border-radius: 1.2rem;
+  border: none;
+  outline: none;
+  font-size: 2.1rem;
+  font-family: "Poppins", sans-serif;
+  color: #35323e;
+  margin-right: 2.5rem;
+}
+
+.link-shorten__field::-webkit-input-placeholder {
+  color: #9e9aa7;
+}
+
+.link-shorten__field:-ms-input-placeholder {
+  color: #9e9aa7;
+}
+
+.link-shorten__field::-ms-input-placeholder {
+  color: #9e9aa7;
+}
+
+.link-shorten__field::placeholder {
+  color: #9e9aa7;
+}
+
+.link-shorten__btn {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  font-size: 2.1rem;
+  border-radius: 1.2rem;
+  padding-inline: 3.5rem;
 }
 
 button {
