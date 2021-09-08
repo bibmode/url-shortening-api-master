@@ -1,0 +1,26 @@
+button {
+  outline: none;
+  border: none;
+  font-family: $font-main;
+  font-weight: 700;
+}
+
+.nav {
+  &__right {
+    &--login {
+      font-size: 1.8rem;
+      color: $color-gray-violet;
+      background-color: transparent;
+      padding: 0.5rem 2.5rem;
+    }
+
+    &--login:hover {
+      color: $color-dark-violet;
+      cursor: pointer;
+    }
+
+    &--signup {
+      font-size: 1.8rem;
+    }
+  }
+}

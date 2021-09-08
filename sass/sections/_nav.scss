@@ -1,0 +1,38 @@
+.nav {
+  width: 100vw;
+  height: fit-content;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 6rem 13rem;
+
+  &__logo {
+    margin-right: 4rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: auto;
+  }
+
+  &__link {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: $color-gray-violet;
+    }
+
+    a:hover {
+      color: $color-dark-violet;
+    }
+  }
+}

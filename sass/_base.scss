@@ -14,9 +14,12 @@ html,
 body {
   width: 100%;
   min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
   font-family: $font-main;
   box-sizing: border-box;
+  font-size: 1.8rem;
 }

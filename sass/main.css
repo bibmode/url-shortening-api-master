@@ -1,3 +1,16 @@
+.btn-cyan {
+  color: #fff;
+  background-color: #2acfcf;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.btn-cyan:hover {
+  -webkit-filter: saturate(50%) brightness(120%);
+          filter: saturate(50%) brightness(120%);
+}
+
 *,
 *::after,
 *::before {
@@ -15,11 +28,88 @@ html,
 body {
   width: 100%;
   min-height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 1.8rem;
+}
+
+.nav {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 13rem;
+}
+
+.nav__logo {
+  margin-right: 4rem;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin-right: auto;
+}
+
+.nav__link {
+  cursor: pointer;
+}
+
+.nav__link:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
+.nav__link a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #9e9aa7;
+}
+
+.nav__link a:hover {
+  color: #232127;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.nav__right--login {
+  font-size: 1.8rem;
+  color: #9e9aa7;
+  background-color: transparent;
+  padding: 0.5rem 2.5rem;
+}
+
+.nav__right--login:hover {
+  color: #232127;
+  cursor: pointer;
+}
+
+.nav__right--signup {
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=main.css.map */
