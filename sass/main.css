@@ -173,6 +173,7 @@ body {
           align-items: center;
   background-color: #eff0f5;
   padding-block: 2rem;
+  padding-bottom: 5rem;
 }
 
 .statistics__title {
