@@ -211,7 +211,8 @@ body {
   background-image: url(../images/bg-boost-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 5.5rem 1rem;
+  padding: 5.4rem 1rem;
+  margin-bottom: -1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +239,7 @@ body {
 }
 
 .footer {
-  background-color: #35323e;
+  background-color: #232127;
   padding-block: 6rem;
   display: -ms-grid;
   display: grid;
