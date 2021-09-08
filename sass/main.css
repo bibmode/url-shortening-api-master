@@ -11,6 +11,10 @@
           filter: saturate(50%) brightness(120%);
 }
 
+.heading-2 {
+  font-size: 4rem;
+}
+
 *,
 *::after,
 *::before {
@@ -151,6 +155,64 @@ body {
   background-color: #eff0f5;
 }
 
+.statistics {
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eff0f5;
+  padding-block: 2rem;
+}
+
+.statistics__title {
+  padding-inline: 3rem;
+}
+
+.statistics__text {
+  font-size: 1.8rem;
+  width: 37%;
+  color: #9e9aa7;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.nav__right--login {
+  font-size: 1.8rem;
+  color: #9e9aa7;
+  background-color: transparent;
+  padding: 0.5rem 2.5rem;
+}
+
+.nav__right--login:hover {
+  color: #232127;
+  cursor: pointer;
+}
+
+.nav__right--signup {
+  font-size: 1.8rem;
+}
+
+.header__button {
+  font-size: 2rem;
+  padding: 1.5rem 4.5rem;
+}
+
 .link-shorten {
   margin: 0 13rem;
   height: -webkit-max-content;
@@ -159,6 +221,7 @@ body {
   padding-block: 5rem;
   background-image: url(../images/bg-shorten-desktop.svg);
   background-color: #3b3054;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
   -webkit-transform: translateY(-50%);
@@ -209,33 +272,5 @@ body {
   font-size: 2.1rem;
   border-radius: 1.2rem;
   padding-inline: 3.5rem;
-}
-
-button {
-  outline: none;
-  border: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-}
-
-.nav__right--login {
-  font-size: 1.8rem;
-  color: #9e9aa7;
-  background-color: transparent;
-  padding: 0.5rem 2.5rem;
-}
-
-.nav__right--login:hover {
-  color: #232127;
-  cursor: pointer;
-}
-
-.nav__right--signup {
-  font-size: 1.8rem;
-}
-
-.header__button {
-  font-size: 2rem;
-  padding: 1.5rem 4.5rem;
 }
 /*# sourceMappingURL=main.css.map */
