@@ -15,6 +15,23 @@
   font-size: 4rem;
 }
 
+.link-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.link-item {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #bfbfbf;
+  cursor: pointer;
+}
+
+.link-item:hover {
+  color: #2acfcf;
+}
+
 *,
 *::after,
 *::before {
@@ -216,6 +233,46 @@ body {
 .boost__btn {
   font-size: 2rem;
   padding: 1.3rem 4.5rem;
+}
+
+.footer {
+  background-color: #35323e;
+  padding-block: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10rem 30vw (calc((100vw - (20rem + 30vw + (3rem * 6))) / 4))[4] 10rem;
+      grid-template-columns: 10rem 30vw repeat(4, calc((100vw - (20rem + 30vw + (3rem * 6))) / 4)) 10rem;
+  grid-gap: 3rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer__logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__icon {
+  cursor: pointer;
+}
+
+.footer__icon:hover {
+  fill: #2acfcf;
 }
 
 button {

@@ -1,0 +1,49 @@
+.footer {
+  background-color: $color-dark-blue;
+  padding-block: 6rem;
+
+  display: grid;
+  grid-template-columns:
+    10rem 30vw repeat(4, calc((100vw - (20rem + 30vw + (3rem * 6))) / 4))
+    10rem;
+  grid-gap: 3rem;
+
+  ul {
+    list-style: none;
+  }
+
+  &__logo {
+    grid-column: 2 / span 1;
+  }
+
+  &__features {
+  }
+
+  &__feature {
+  }
+
+  &__resources {
+  }
+
+  &__resource {
+  }
+
+  &__companies {
+  }
+
+  &__company {
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__icon {
+    cursor: pointer;
+    &:hover {
+      fill: $color-cyan;
+    }
+  }
+}

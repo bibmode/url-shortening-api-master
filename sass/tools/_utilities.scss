@@ -13,3 +13,20 @@
 .heading-2 {
   font-size: 4rem;
 }
+
+.link-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.link-item {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: $color-gray;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-cyan;
+  }
+}
