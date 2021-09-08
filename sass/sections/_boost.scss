@@ -1,0 +1,21 @@
+.boost {
+  background-color: $color-violet;
+  background-image: url(../images/bg-boost-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5.5rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__heading {
+    color: #fff;
+    margin-bottom: 1.8rem;
+  }
+
+  &__btn {
+    font-size: 2rem;
+    padding: 1.3rem 4.5rem;
+  }
+}
