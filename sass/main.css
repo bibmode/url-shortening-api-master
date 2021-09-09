@@ -42,6 +42,10 @@
   margin-top: -6rem;
 }
 
+.hidden {
+  display: none;
+}
+
 *,
 *::after,
 *::before {
@@ -179,7 +183,7 @@ body {
   height: -moz-max-content;
   height: max-content;
   background-color: #eff0f5;
-  padding-bottom: 4rem;
+  padding-bottom: 7rem;
   position: relative;
 }
 
