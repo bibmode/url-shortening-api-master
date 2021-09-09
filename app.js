@@ -14,23 +14,30 @@ let countResults = 0;
 
 // Get Data from API
 const getData = async function (userLink) {
-  loader.style.display = "flex";
-  inputField.style.display = "none";
-  inputButton.style.display = "none";
+  try {
+    loader.style.display = "flex";
+    inputField.style.display = "none";
+    inputButton.style.display = "none";
 
-  const dataSource = await fetch(
-    `https://api.shrtco.de/v2/shorten?url=${userLink}`
-  );
+    const dataSource = await fetch(
+      `https://api.shrtco.de/v2/shorten?url=${userLink}`
+    );
 
-  loader.style.display = "none";
-  inputField.style.display = "block";
-  inputButton.style.display = "block";
+    loader.style.display = "none";
+    inputField.style.display = "block";
+    inputButton.style.display = "block";
 
-  const { result } = await dataSource.json();
+    const { ok, result } = await dataSource.json();
 
-  const shortenLink = result.short_link;
-  showResult(userLink, shortenLink);
-  countResults++;
+    if (!ok) throw new Error("An error occured please try again");
+
+    const shortenLink = result.short_link;
+    showResult(userLink, shortenLink);
+    countResults++;
+  } catch (err) {
+    console.log(err);
+    showError("An error occured. Please try again!");
+  }
 };
 
 // Show Result to UI
@@ -80,9 +87,10 @@ const copyResult = function (resultDiv) {
   });
 };
 
-const showError = function () {
+const showError = function (message) {
   inputField.classList.add("errorField");
   inputError.classList.remove("hidden");
+  inputError.innerHTML = message;
 };
 
 const useData = function () {
@@ -91,7 +99,7 @@ const useData = function () {
     inputField.value = "";
     inputField.blur();
   } else {
-    showError();
+    showError("Please add a link");
   }
 };
 
