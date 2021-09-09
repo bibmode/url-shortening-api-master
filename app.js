@@ -36,6 +36,9 @@ const getData = async function (userLink) {
     countResults++;
   } catch (err) {
     console.log(err);
+    loader.style.display = "none";
+    inputField.style.display = "block";
+    inputButton.style.display = "block";
     showError("An error occured. Please try again!");
   }
 };
