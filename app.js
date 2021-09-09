@@ -1,6 +1,7 @@
 "use strict";
 
 const inputField = document.querySelector(".link-shorten__field");
+const inputButton = document.querySelector(".link-shorten__btn");
 const appDiv = document.querySelector(".app");
 
 let countResults = 0;
@@ -13,6 +14,12 @@ inputField.addEventListener("keydown", (e) => {
   }
 });
 
+inputButton.addEventListener("click", (e) => {
+  getUserInput(inputField.value);
+  inputField.value = "";
+  inputField.blur();
+});
+
 const getUserInput = async function (userLink) {
   const dataSource = await fetch(
     `https://api.shrtco.de/v2/shorten?url=${userLink}`
@@ -21,6 +28,7 @@ const getUserInput = async function (userLink) {
   const shortenLink = data.result.short_link;
 
   showResult(userLink, shortenLink);
+
   countResults++;
 };
 
