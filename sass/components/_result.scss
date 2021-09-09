@@ -9,6 +9,7 @@
 
   &__input {
     color: $color-dark-blue;
+    margin-right: 2rem;
   }
 
   &__link {
@@ -20,5 +21,7 @@
   &__btn {
     border-radius: 6px;
     font-size: 1.8rem;
+    width: 11.5rem;
+    padding-inline: 0;
   }
 }

@@ -347,6 +347,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .link-shorten__field {
@@ -386,6 +387,60 @@ button {
   padding-inline: 3.5rem;
 }
 
+.link-shorten__error {
+  position: absolute;
+  font-style: italic;
+  margin-bottom: -11rem;
+  margin-left: -78%;
+  font-size: 1.6rem;
+  color: rgba(244, 98, 98, 0.7);
+}
+
+.loader {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader__img {
+  width: 6rem;
+}
+
+.loader__text {
+  color: #fff;
+  font-weight: 700;
+}
+
+.errorField {
+  border: 0.3rem solid #f46262;
+  margin-block: -0.3rem;
+  margin-left: -0.3rem;
+}
+
+.errorField::-webkit-input-placeholder {
+  color: rgba(244, 98, 98, 0.5);
+}
+
+.errorField:-ms-input-placeholder {
+  color: rgba(244, 98, 98, 0.5);
+}
+
+.errorField::-ms-input-placeholder {
+  color: rgba(244, 98, 98, 0.5);
+}
+
+.errorField::placeholder {
+  color: rgba(244, 98, 98, 0.5);
+}
+
 .result {
   background-color: #fff;
   margin-inline: 13rem;
@@ -402,6 +457,7 @@ button {
 
 .result__input {
   color: #35323e;
+  margin-right: 2rem;
 }
 
 .result__link {
@@ -413,6 +469,8 @@ button {
 .result__btn {
   border-radius: 6px;
   font-size: 1.8rem;
+  width: 11.5rem;
+  padding-inline: 0;
 }
 
 .cards {

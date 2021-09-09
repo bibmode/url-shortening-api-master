@@ -2,7 +2,10 @@
 
 const inputField = document.querySelector(".link-shorten__field");
 const inputButton = document.querySelector(".link-shorten__btn");
+const inputError = document.querySelector(".link-shorten__error");
 const appDiv = document.querySelector(".app");
+
+const loader = document.querySelector(".loader");
 
 let countResults = 0;
 
@@ -11,14 +14,22 @@ let countResults = 0;
 
 // Get Data from API
 const getData = async function (userLink) {
+  loader.style.display = "flex";
+  inputField.style.display = "none";
+  inputButton.style.display = "none";
+
   const dataSource = await fetch(
     `https://api.shrtco.de/v2/shorten?url=${userLink}`
   );
-  const data = await dataSource.json();
-  const shortenLink = data.result.short_link;
 
+  loader.style.display = "none";
+  inputField.style.display = "block";
+  inputButton.style.display = "block";
+
+  const { result } = await dataSource.json();
+
+  const shortenLink = result.short_link;
   showResult(userLink, shortenLink);
-
   countResults++;
 };
 
@@ -69,18 +80,35 @@ const copyResult = function (resultDiv) {
   });
 };
 
-//////////////////////////////////////////////////////////////
-// EVENT LISTENERS
-inputField.addEventListener("keydown", (e) => {
-  if (e.keyCode === 13) {
-    getData(inputField.value);
+const showError = function () {
+  inputField.classList.add("errorField");
+  inputError.classList.remove("hidden");
+};
+
+const useData = function () {
+  if (inputField.value.trim() !== "") {
+    getData(inputField.value.trim());
     inputField.value = "";
     inputField.blur();
+  } else {
+    showError();
+  }
+};
+
+//////////////////////////////////////////////////////////////
+// EVENT LISTENERS
+
+inputField.addEventListener("click", () => {
+  inputField.classList.remove("errorField");
+  inputError.classList.add("hidden");
+});
+
+inputField.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    useData();
   }
 });
 
 inputButton.addEventListener("click", () => {
-  getData(inputField.value);
-  inputField.value = "";
-  inputField.blur();
+  useData();
 });

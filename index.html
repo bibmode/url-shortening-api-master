@@ -61,12 +61,22 @@
 
       <section class="app">
         <div class="link-shorten">
+          <div class="loader">
+            <img
+              class="loader__img"
+              src="images/Spin-1s-200px.svg"
+              alt="spinner"
+            />
+            <h3 class="heading-3 loader__text">Generating Link...</h3>
+          </div>
+
           <input
             type="text"
             class="link-shorten__field"
             placeholder="Shorten a link here..."
           />
           <button class="link-shorten__btn btn-cyan">Shorten It!</button>
+          <h4 class="link-shorten__error hidden">Please add a link</h4>
         </div>
 
         <!-- <div class="result negative-margin">
