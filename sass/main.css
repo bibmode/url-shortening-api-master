@@ -15,6 +15,10 @@
   font-size: 4rem;
 }
 
+.heading-3 {
+  font-weight: 500;
+}
+
 .link-heading {
   font-size: 1.6rem;
   font-weight: 700;
@@ -32,6 +36,10 @@
 
 .link-item:hover {
   color: #2acfcf;
+}
+
+.negative-margin {
+  margin-top: -6rem;
 }
 
 *,
@@ -167,11 +175,12 @@ body {
 
 .app {
   width: 100%;
-  min-height: 20rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   background-color: #eff0f5;
+  padding-bottom: 4rem;
+  position: relative;
 }
 
 .statistics {
@@ -333,7 +342,7 @@ button {
 }
 
 .link-shorten__field {
-  width: 65%;
+  width: 72%;
   padding: 1.8rem 3.5rem;
   border-radius: 1.2rem;
   border: none;
@@ -367,6 +376,35 @@ button {
   font-size: 2.1rem;
   border-radius: 1.2rem;
   padding-inline: 3.5rem;
+}
+
+.result {
+  background-color: #fff;
+  margin-inline: 13rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.6rem 3rem;
+  border-radius: 6px;
+}
+
+.result__input {
+  color: #35323e;
+}
+
+.result__link {
+  margin-left: auto;
+  margin-right: 2.5rem;
+  color: #2acfcf;
+}
+
+.result__btn {
+  border-radius: 6px;
+  font-size: 1.8rem;
 }
 
 .cards {

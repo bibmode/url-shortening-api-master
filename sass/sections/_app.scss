@@ -1,6 +1,7 @@
 .app {
   width: 100%;
-  min-height: 20rem;
   height: max-content;
   background-color: $color-light-gray;
+  padding-bottom: 4rem;
+  position: relative;
 }

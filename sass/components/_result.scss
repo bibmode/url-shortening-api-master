@@ -1,0 +1,24 @@
+.result {
+  background-color: #fff;
+  margin-inline: 13rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 3rem;
+  border-radius: 6px;
+
+  &__input {
+    color: $color-dark-blue;
+  }
+
+  &__link {
+    margin-left: auto;
+    margin-right: 2.5rem;
+    color: $color-cyan;
+  }
+
+  &__btn {
+    border-radius: 6px;
+    font-size: 1.8rem;
+  }
+}

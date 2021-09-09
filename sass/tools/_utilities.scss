@@ -14,6 +14,10 @@
   font-size: 4rem;
 }
 
+.heading-3 {
+  font-weight: 500;
+}
+
 .link-heading {
   font-size: 1.6rem;
   font-weight: 700;
@@ -31,4 +35,8 @@
   &:hover {
     color: $color-cyan;
   }
+}
+
+.negative-margin {
+  margin-top: -6rem;
 }
