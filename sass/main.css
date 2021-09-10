@@ -96,6 +96,12 @@ body {
   padding-bottom: 8rem;
 }
 
+@media only screen and (max-width: 79em) {
+  .nav {
+    padding-inline: 6rem;
+  }
+}
+
 .nav__logo {
   margin-right: 4rem;
 }
@@ -118,6 +124,12 @@ body {
 
 .nav__link:not(:last-child) {
   margin-right: 3.5rem;
+}
+
+@media only screen and (max-width: 79em) {
+  .nav__link:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 .nav__link a {
@@ -145,10 +157,37 @@ body {
   padding-bottom: 16rem;
 }
 
+@media only screen and (max-width: 79em) {
+  .header {
+    -ms-grid-columns: 6rem (minmax(min-content, 42%))[2] 1fr;
+        grid-template-columns: 6rem repeat(2, minmax(-webkit-min-content, 42%)) 1fr;
+        grid-template-columns: 6rem repeat(2, minmax(min-content, 42%)) 1fr;
+  }
+}
+
+@media only screen and (max-width: 53.19em) {
+  .header {
+    -ms-grid-columns: 6rem minmax(min-content) 6rem;
+        grid-template-columns: 6rem minmax(-webkit-min-content) 6rem;
+        grid-template-columns: 6rem minmax(min-content) 6rem;
+    justify-items: center;
+    text-align: center;
+    grid-row-gap: 1rem;
+  }
+}
+
 .header__tagline, .header__text, .header__button {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / span 1;
+}
+
+@media only screen and (max-width: 53.19em) {
+  .header__tagline, .header__text, .header__button {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / span 2;
+  }
 }
 
 .header__tagline {
@@ -161,11 +200,39 @@ body {
       align-self: end;
 }
 
+@media only screen and (max-width: 79em) {
+  .header__tagline {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 53.19em) {
+  .header__tagline {
+    font-size: 8rem;
+    width: 70%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: initial;
+  }
+}
+
 .header__text {
   font-size: 2.1rem;
   font-weight: 500;
   color: #9e9aa7;
   max-width: 90%;
+}
+
+@media only screen and (max-width: 53.19em) {
+  .header__text {
+    font-size: 2.8rem;
+    max-width: 100%;
+  }
 }
 
 .header__button {
@@ -174,6 +241,17 @@ body {
       align-self: start;
   -ms-grid-column-align: start;
       justify-self: start;
+}
+
+@media only screen and (max-width: 53.19em) {
+  .header__button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 3rem;
+  }
 }
 
 .header__illustration {
@@ -265,6 +343,20 @@ body {
   grid-gap: 3rem;
 }
 
+@media only screen and (max-width: 79em) {
+  .footer {
+    -ms-grid-columns: 5rem 20vw (calc((100vw - (10rem + 20vw + (3rem * 6))) / 4))[4] 5rem;
+        grid-template-columns: 5rem 20vw repeat(4, calc((100vw - (10rem + 20vw + (3rem * 6))) / 4)) 5rem;
+  }
+}
+
+@media only screen and (max-width: 62.94em) {
+  .footer {
+    -ms-grid-columns: 2rem 20vw (calc((100vw - (4rem + 20vw + (3rem * 6))) / 4))[4] 2rem;
+        grid-template-columns: 2rem 20vw repeat(4, calc((100vw - (4rem + 20vw + (3rem * 6))) / 4)) 2rem;
+  }
+}
+
 .footer ul {
   list-style: none;
 }
@@ -325,6 +417,12 @@ button {
   padding: 1.5rem 4.5rem;
 }
 
+@media only screen and (max-width: 53.19em) {
+  .header__button {
+    font-size: 2.8rem;
+  }
+}
+
 .link-shorten {
   margin: 0 13rem;
   height: -webkit-max-content;
@@ -354,6 +452,12 @@ button {
   position: relative;
 }
 
+@media only screen and (max-width: 79em) {
+  .link-shorten {
+    margin: 0 5rem;
+  }
+}
+
 .link-shorten__container {
   width: 100%;
   display: -webkit-box;
@@ -374,6 +478,12 @@ button {
   font-family: "Poppins", sans-serif;
   color: #35323e;
   margin-right: 2.5rem;
+}
+
+@media only screen and (max-width: 79em) {
+  .link-shorten__field {
+    width: 65%;
+  }
 }
 
 .link-shorten__field::-webkit-input-placeholder {
@@ -513,13 +623,22 @@ button {
   top: 42%;
 }
 
+@media only screen and (max-width: 62.94em) {
+  .cards {
+    -ms-grid-columns: 2rem (min-content)[3] 2rem;
+        grid-template-columns: 2rem repeat(3, -webkit-min-content) 2rem;
+        grid-template-columns: 2rem repeat(3, min-content) 2rem;
+    margin-block: 5rem;
+  }
+}
+
 .card {
   background-color: #fff;
   width: calc((100vw - ((10.5rem * 2) + (3rem * 4))) / 3);
   padding: 4rem 3.2rem;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   padding-top: 0;
   text-align: left;
   border-radius: 5px;
@@ -531,6 +650,12 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (max-width: 62.94em) {
+  .card {
+    width: calc((100vw - ((2rem * 2) + (3rem * 4))) / 3);
+  }
 }
 
 .card--1 {

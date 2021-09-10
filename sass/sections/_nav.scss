@@ -7,6 +7,10 @@
   padding: 6rem 13rem;
   padding-bottom: 8rem;
 
+  @include respond(tablet-big) {
+    padding-inline: 6rem;
+  }
+
   &__logo {
     margin-right: 4rem;
   }
@@ -23,6 +27,10 @@
 
     &:not(:last-child) {
       margin-right: 3.5rem;
+
+      @include respond(tablet-big) {
+        margin-right: 1rem;
+      }
     }
 
     a {

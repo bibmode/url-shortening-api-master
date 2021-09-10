@@ -10,10 +10,30 @@
 
   padding-bottom: 16rem;
 
+  @include respond(tablet-big) {
+    grid-template-columns:
+      6rem repeat(2, minmax(min-content, 42%))
+      1fr;
+  }
+
+  @include respond(tablet-mid) {
+    grid-template-columns:
+      6rem minmax(min-content)
+      6rem;
+
+    justify-items: center;
+    text-align: center;
+    grid-row-gap: 1rem;
+  }
+
   &__tagline,
   &__text,
   &__button {
     grid-column: 2 / span 1;
+
+    @include respond(tablet-mid) {
+      grid-column: 2 / span 2;
+    }
   }
 
   &__tagline {
@@ -22,6 +42,20 @@
     font-weight: 700;
     line-height: 1.15;
     align-self: end;
+
+    @include respond(tablet-big) {
+      font-size: 6rem;
+    }
+
+    @include respond(tablet-mid) {
+      font-size: 8rem;
+      width: 70%;
+      grid-row: 1 / span 1;
+
+      justify-self: start;
+      align-self: flex-start;
+      text-align: initial;
+    }
   }
 
   &__text {
@@ -29,15 +63,29 @@
     font-weight: 500;
     color: $color-gray-violet;
     max-width: 90%;
+
+    @include respond(tablet-mid) {
+      font-size: 2.8rem;
+      max-width: 100%;
+    }
   }
 
   &__button {
     align-self: start;
     justify-self: start;
+
+    @include respond(tablet-mid) {
+      align-self: center;
+      justify-self: center;
+      margin-top: 3rem;
+    }
   }
 
   &__illustration {
     grid-column: 3 / -1;
     grid-row: 1 / -1;
+
+    @include respond(tablet-mid) {
+    }
   }
 }

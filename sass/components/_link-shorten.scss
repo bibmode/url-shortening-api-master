@@ -16,6 +16,10 @@
 
   position: relative;
 
+  @include respond(tablet-big) {
+    margin: 0 5rem;
+  }
+
   &__container {
     width: 100%;
     display: flex;
@@ -32,6 +36,10 @@
     font-family: $font-main;
     color: $color-dark-blue;
     margin-right: 2.5rem;
+
+    @include respond(tablet-big) {
+      width: 65%;
+    }
 
     &::placeholder {
       color: $color-gray-violet;
