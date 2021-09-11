@@ -355,6 +355,13 @@ body {
   margin-bottom: 3rem;
 }
 
+@media only screen and (max-width: 62.94em) {
+  .statistics__text {
+    font-size: 2.1rem;
+    width: 60%;
+  }
+}
+
 .boost {
   background-color: #3b3054;
   background-image: url(../images/bg-boost-desktop.svg);

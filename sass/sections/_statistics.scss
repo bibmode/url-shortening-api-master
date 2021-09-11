@@ -18,5 +18,10 @@
     width: 37%;
     color: $color-gray-violet;
     margin-bottom: 3rem;
+
+    @include respond(tablet) {
+      font-size: 2.1rem;
+      width: 60%;
+    }
   }
 }
