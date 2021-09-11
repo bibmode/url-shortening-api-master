@@ -49,12 +49,23 @@
 
     @include respond(tablet-mid) {
       font-size: 8rem;
-      width: 70%;
+      width: 78%;
       grid-row: 1 / span 1;
 
       justify-self: start;
       align-self: flex-start;
       text-align: initial;
+    }
+
+    @include respond(tablet-sm) {
+      font-size: 5rem;
+      width: 100%;
+      grid-row: 4 / span 1;
+      margin-top: 4rem;
+
+      justify-self: center;
+      align-self: center;
+      text-align: center;
     }
   }
 
@@ -67,6 +78,10 @@
     @include respond(tablet-mid) {
       font-size: 2.8rem;
       max-width: 100%;
+    }
+
+    @include respond(tablet-sm) {
+      font-size: 2.5rem;
     }
   }
 

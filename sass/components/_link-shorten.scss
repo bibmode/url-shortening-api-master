@@ -6,7 +6,7 @@
   background-color: $color-violet;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   transform: translateY(-50%);
 
   display: flex;
@@ -20,16 +20,25 @@
     margin: 0 5rem;
   }
 
+  @include respond(tablet-sm) {
+    padding-block: 3rem;
+  }
+
   &__container {
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @include respond(tablet-sm) {
+      flex-direction: column;
+      padding-inline: 3.5rem;
+    }
   }
 
   &__field {
     width: 72%;
     padding: 1.8rem 3.5rem;
-    border-radius: 1.2rem;
+    border-radius: 0.6rem;
     border: none;
     outline: none;
     font-size: 2.1rem;
@@ -41,6 +50,12 @@
       width: 65%;
     }
 
+    @include respond(tablet-sm) {
+      width: 100%;
+      padding: 1.5rem 3.5rem;
+      margin-bottom: 2rem;
+    }
+
     &::placeholder {
       color: $color-gray-violet;
     }
@@ -49,7 +64,7 @@
   &__btn {
     align-self: stretch;
     font-size: 2.1rem;
-    border-radius: 1.2rem;
+    border-radius: 0.6rem;
     padding-inline: 3.5rem;
   }
 
@@ -61,6 +76,12 @@
     font-style: italic;
     font-size: 1.6rem;
     color: rgba($color-red, 0.7);
+
+    @include respond(tablet-sm) {
+      align-self: center;
+      margin-left: 0;
+      margin-bottom: -2.5rem;
+    }
   }
 }
 
@@ -84,6 +105,12 @@
   border: 0.3rem solid $color-red;
   margin-block: -0.3rem;
   margin-left: -0.3rem;
+
+  @include respond(tablet-sm) {
+    margin-block: inherit;
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
 
   &::placeholder {
     color: rgba($color-red, 0.5);

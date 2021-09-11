@@ -110,6 +110,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 45.81em) {
+  .nav {
+    padding-bottom: 3rem;
+  }
+}
+
 .nav__logo {
   margin-right: 4rem;
 }
@@ -263,7 +269,7 @@ body {
 @media only screen and (max-width: 53.19em) {
   .header__tagline {
     font-size: 8rem;
-    width: 70%;
+    width: 78%;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / span 1;
@@ -272,6 +278,23 @@ body {
     -ms-flex-item-align: start;
         align-self: flex-start;
     text-align: initial;
+  }
+}
+
+@media only screen and (max-width: 45.81em) {
+  .header__tagline {
+    font-size: 5rem;
+    width: 100%;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / span 1;
+    margin-top: 4rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
   }
 }
 
@@ -286,6 +309,12 @@ body {
   .header__text {
     font-size: 2.8rem;
     max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 45.81em) {
+  .header__text {
+    font-size: 2.5rem;
   }
 }
 
@@ -506,7 +535,7 @@ button {
   background-color: #3b3054;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: -webkit-box;
@@ -531,6 +560,12 @@ button {
   }
 }
 
+@media only screen and (max-width: 45.81em) {
+  .link-shorten {
+    padding-block: 3rem;
+  }
+}
+
 .link-shorten__container {
   width: 100%;
   display: -webkit-box;
@@ -541,10 +576,20 @@ button {
           justify-content: center;
 }
 
+@media only screen and (max-width: 45.81em) {
+  .link-shorten__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-inline: 3.5rem;
+  }
+}
+
 .link-shorten__field {
   width: 72%;
   padding: 1.8rem 3.5rem;
-  border-radius: 1.2rem;
+  border-radius: 0.6rem;
   border: none;
   outline: none;
   font-size: 2.1rem;
@@ -556,6 +601,14 @@ button {
 @media only screen and (max-width: 79em) {
   .link-shorten__field {
     width: 65%;
+  }
+}
+
+@media only screen and (max-width: 45.81em) {
+  .link-shorten__field {
+    width: 100%;
+    padding: 1.5rem 3.5rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -580,7 +633,7 @@ button {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   font-size: 2.1rem;
-  border-radius: 1.2rem;
+  border-radius: 0.6rem;
   padding-inline: 3.5rem;
 }
 
@@ -593,6 +646,16 @@ button {
   font-style: italic;
   font-size: 1.6rem;
   color: rgba(244, 98, 98, 0.7);
+}
+
+@media only screen and (max-width: 45.81em) {
+  .link-shorten__error {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 0;
+    margin-bottom: -2.5rem;
+  }
 }
 
 .loader {
@@ -622,6 +685,14 @@ button {
   border: 0.3rem solid #f46262;
   margin-block: -0.3rem;
   margin-left: -0.3rem;
+}
+
+@media only screen and (max-width: 45.81em) {
+  .errorField {
+    margin-block: inherit;
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
 }
 
 .errorField::-webkit-input-placeholder {
