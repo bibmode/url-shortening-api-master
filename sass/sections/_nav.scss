@@ -11,8 +11,15 @@
     padding-inline: 6rem;
   }
 
+  @include respond(tablet-mid) {
+    justify-content: space-between;
+  }
+
   &__logo {
     margin-right: 4rem;
+    @include respond(tablet-mid) {
+      width: 20rem;
+    }
   }
 
   &__links {
@@ -42,6 +49,56 @@
 
     a:hover {
       color: $color-dark-violet;
+    }
+  }
+
+  &__right {
+    &--checkbox {
+      display: none;
+    }
+
+    &--hamburger {
+      display: none;
+
+      @include respond(tablet-mid) {
+        display: block;
+        width: 4rem;
+        height: 0.5rem;
+        background-color: $color-gray-violet;
+        position: relative;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          width: 4rem;
+          height: 0.5rem;
+          background-color: $color-gray-violet;
+        }
+
+        &::before {
+          transform: translateY(-1.4rem);
+        }
+
+        &::after {
+          transform: translateY(1.4rem);
+        }
+      }
+    }
+
+    &--login {
+    }
+
+    &--signup {
+    }
+  }
+
+  &__right--login,
+  &__right--signup,
+  &__links {
+    @include respond(tablet-mid) {
+      display: none;
     }
   }
 }

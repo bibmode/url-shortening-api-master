@@ -102,8 +102,22 @@ body {
   }
 }
 
+@media only screen and (max-width: 53.19em) {
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .nav__logo {
   margin-right: 4rem;
+}
+
+@media only screen and (max-width: 53.19em) {
+  .nav__logo {
+    width: 20rem;
+  }
 }
 
 .nav__links {
@@ -141,6 +155,46 @@ body {
 
 .nav__link a:hover {
   color: #232127;
+}
+
+.nav__right--checkbox {
+  display: none;
+}
+
+.nav__right--hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 53.19em) {
+  .nav__right--hamburger {
+    display: block;
+    width: 4rem;
+    height: 0.5rem;
+    background-color: #9e9aa7;
+    position: relative;
+    cursor: pointer;
+  }
+  .nav__right--hamburger::before, .nav__right--hamburger::after {
+    position: absolute;
+    content: "";
+    width: 4rem;
+    height: 0.5rem;
+    background-color: #9e9aa7;
+  }
+  .nav__right--hamburger::before {
+    -webkit-transform: translateY(-1.4rem);
+            transform: translateY(-1.4rem);
+  }
+  .nav__right--hamburger::after {
+    -webkit-transform: translateY(1.4rem);
+            transform: translateY(1.4rem);
+  }
+}
+
+@media only screen and (max-width: 53.19em) {
+  .nav__right--login, .nav__right--signup, .nav__links {
+    display: none;
+  }
 }
 
 .header {
