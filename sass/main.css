@@ -440,6 +440,18 @@ body {
           align-items: flex-start;
 }
 
+@media only screen and (max-width: 53.19em) {
+  .footer__icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
 .footer__icon {
   cursor: pointer;
   font-size: 2.4rem;
