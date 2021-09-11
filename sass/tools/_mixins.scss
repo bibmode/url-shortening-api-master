@@ -21,4 +21,10 @@
       @content;
     }
   }
+
+  @if ($breakpoint == "phone-big") {
+    @media only screen and (max-width: 32em) {
+      @content;
+    }
+  }
 }

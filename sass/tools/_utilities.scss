@@ -16,6 +16,10 @@
 
 .heading-2 {
   font-size: 4rem;
+
+  @include respond(phone-big) {
+    font-size: 3.3rem;
+  }
 }
 
 .heading-3 {
@@ -27,6 +31,10 @@
   font-weight: 700;
   color: #fff;
   margin-bottom: 1.6rem;
+
+  @include respond(phone-big) {
+    font-size: 2rem;
+  }
 }
 
 .link-item {
@@ -39,10 +47,18 @@
   &:hover {
     color: $color-cyan;
   }
+
+  @include respond(phone-big) {
+    font-size: 2rem;
+  }
 }
 
 .negative-margin {
   margin-top: -6rem;
+
+  @include respond(phone-big) {
+    margin-top: -7rem;
+  }
 }
 
 .hidden {

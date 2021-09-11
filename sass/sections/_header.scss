@@ -26,6 +26,16 @@
     grid-row-gap: 1rem;
   }
 
+  @include respond(tablet-sm) {
+    grid-template-columns:
+      1fr repeat(2, minmax(min-content, 42%))
+      1fr;
+  }
+
+  @include respond(phone-big) {
+    grid-template-rows: 23rem 20rem 1fr;
+  }
+
   &__tagline,
   &__text,
   &__button {
@@ -61,11 +71,16 @@
       font-size: 5rem;
       width: 100%;
       grid-row: 4 / span 1;
-      margin-top: 4rem;
+      margin-top: 2rem;
 
       justify-self: center;
       align-self: center;
       text-align: center;
+    }
+
+    @include respond(phone-big) {
+      margin-top: 5rem;
+      grid-row: 3 / span 1;
     }
   }
 
@@ -82,6 +97,10 @@
 
     @include respond(tablet-sm) {
       font-size: 2.5rem;
+    }
+
+    @include respond(phone-big) {
+      font-size: 2.2rem;
     }
   }
 
@@ -101,6 +120,12 @@
     grid-row: 1 / -1;
 
     @include respond(tablet-mid) {
+      transform: scale(0.9);
+    }
+
+    @include respond(phone-big) {
+      transform: scale(0.7) translateY(-8rem);
+      grid-row: 1 / span 2;
     }
   }
 }

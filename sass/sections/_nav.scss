@@ -16,13 +16,18 @@
   }
 
   @include respond(tablet-sm) {
-    padding-bottom: 3rem;
+    padding: 5rem 2.5rem;
+    padding-bottom: 1rem;
   }
 
   &__logo {
     margin-right: 4rem;
     @include respond(tablet-mid) {
       width: 20rem;
+    }
+
+    @include respond(phone-big) {
+      width: 16rem;
     }
   }
 
@@ -87,6 +92,25 @@
 
         &::after {
           transform: translateY(1.4rem);
+        }
+      }
+
+      @include respond(phone-big) {
+        width: 3rem;
+        height: 0.36rem;
+
+        &::before,
+        &::after {
+          width: 3rem;
+          height: 0.36rem;
+        }
+
+        &::before {
+          transform: translateY(-1.1rem);
+        }
+
+        &::after {
+          transform: translateY(1.1rem);
         }
       }
     }

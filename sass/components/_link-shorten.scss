@@ -24,6 +24,10 @@
     padding-block: 3rem;
   }
 
+  @include respond(phone-big) {
+    margin: 0 3rem;
+  }
+
   &__container {
     width: 100%;
     display: flex;

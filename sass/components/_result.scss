@@ -19,6 +19,10 @@
     padding: 1.9rem 0;
   }
 
+  @include respond(phone-big) {
+    margin-inline: 2.9rem;
+  }
+
   &__input {
     color: $color-dark-blue;
     max-width: 70%;
