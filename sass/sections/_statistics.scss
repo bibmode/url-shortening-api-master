@@ -23,5 +23,10 @@
       font-size: 2.1rem;
       width: 60%;
     }
+
+    @include respond(phone-big) {
+      font-size: 2rem;
+      width: 90%;
+    }
   }
 }

@@ -4,6 +4,8 @@
   padding: 1rem 3rem;
   border-radius: 5rem;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-cyan:hover {
@@ -329,6 +331,7 @@ body {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  z-index: 50;
 }
 
 @media only screen and (max-width: 79em) {
@@ -371,7 +374,7 @@ body {
 
 @media only screen and (max-width: 32em) {
   .header__tagline {
-    margin-top: 5rem;
+    margin-top: 2.8rem;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / span 1;
@@ -432,16 +435,19 @@ body {
   .header__illustration {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+    z-index: 90;
   }
 }
 
 @media only screen and (max-width: 32em) {
   .header__illustration {
-    -webkit-transform: scale(0.7) translateY(-8rem);
-            transform: scale(0.7) translateY(-8rem);
+    width: 130vw;
+    -webkit-transform: translate(-1.8rem, 2.5rem);
+            transform: translate(-1.8rem, 2.5rem);
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     grid-row: 1 / span 2;
+    z-index: 1;
   }
 }
 
@@ -491,6 +497,13 @@ body {
   .statistics__text {
     font-size: 2.1rem;
     width: 60%;
+  }
+}
+
+@media only screen and (max-width: 32em) {
+  .statistics__text {
+    font-size: 2rem;
+    width: 90%;
   }
 }
 
@@ -1172,5 +1185,66 @@ button {
   .card__text {
     font-size: 2rem;
   }
+}
+
+.drop-down {
+  background-color: #3b3054;
+  position: absolute;
+  width: calc(100vw - 5rem);
+  margin-inline: 2.5rem;
+  z-index: 100;
+  border-radius: 1.5rem;
+  padding: 5rem 3rem;
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 53.19em) {
+  .drop-down {
+    margin-top: -1rem;
+  }
+}
+
+@media only screen and (max-width: 45.81em) {
+  .drop-down {
+    margin-top: 2.5rem;
+  }
+}
+
+.drop-down__links {
+  list-style: none;
+}
+
+.drop-down__link {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.drop-down__link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.drop-down__bottom > * {
+  width: 100%;
+}
+
+.drop-down__bottom--login {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 700;
+  background-color: transparent;
+  padding-block: 3rem;
+  border-top: 1.3px solid rgba(191, 191, 191, 0.2);
+}
+
+.drop-down__bottom--signup {
+  font-size: 2.3rem;
+  padding-block: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

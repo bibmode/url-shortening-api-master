@@ -52,6 +52,7 @@
     font-weight: 700;
     line-height: 1.15;
     align-self: end;
+    z-index: 50;
 
     @include respond(tablet-big) {
       font-size: 6rem;
@@ -79,7 +80,7 @@
     }
 
     @include respond(phone-big) {
-      margin-top: 5rem;
+      margin-top: 2.8rem;
       grid-row: 3 / span 1;
     }
   }
@@ -121,11 +122,14 @@
 
     @include respond(tablet-mid) {
       transform: scale(0.9);
+      z-index: 90;
     }
 
     @include respond(phone-big) {
-      transform: scale(0.7) translateY(-8rem);
+      width: 130vw;
+      transform: translate(-1.8rem, 2.5rem);
       grid-row: 1 / span 2;
+      z-index: 1;
     }
   }
 }
