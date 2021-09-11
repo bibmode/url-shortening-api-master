@@ -7,15 +7,42 @@
   padding: 1.6rem 3rem;
   border-radius: 6px;
 
+  @include respond(tablet-big) {
+    margin-inline: 5rem;
+  }
+
+  @include respond(tablet-sm) {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    padding: 1.9rem 0;
+  }
+
   &__input {
     color: $color-dark-blue;
     max-width: 70%;
+    word-wrap: break-word;
+
+    @include respond(tablet-sm) {
+      max-width: 100%;
+      width: 100%;
+      padding-inline: 2rem;
+      padding-bottom: 1.3rem;
+
+      border-bottom: 2px solid rgba($color-gray, 0.3);
+    }
   }
 
   &__link {
     margin-left: auto;
     margin-right: 2.5rem;
     color: $color-cyan;
+
+    @include respond(tablet-sm) {
+      margin-left: 0;
+      padding: 1.5rem 2rem;
+    }
   }
 
   &__btn {
@@ -23,5 +50,12 @@
     font-size: 1.8rem;
     width: 11.5rem;
     padding-inline: 0;
+
+    @include respond(tablet-sm) {
+      margin-left: 0;
+      padding-block: 1.4rem;
+      margin-inline: 2rem;
+      width: calc(100% - 4rem);
+    }
   }
 }

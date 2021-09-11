@@ -607,7 +607,7 @@ button {
 @media only screen and (max-width: 45.81em) {
   .link-shorten__field {
     width: 100%;
-    padding: 1.5rem 3.5rem;
+    padding: 1.5rem 1.8rem;
     margin-bottom: 2rem;
   }
 }
@@ -635,6 +635,13 @@ button {
   font-size: 2.1rem;
   border-radius: 0.6rem;
   padding-inline: 3.5rem;
+}
+
+@media only screen and (max-width: 45.81em) {
+  .link-shorten__btn {
+    font-size: 2.5rem;
+    padding-block: 1.3rem;
+  }
 }
 
 .link-shorten__error {
@@ -725,9 +732,40 @@ button {
   border-radius: 6px;
 }
 
+@media only screen and (max-width: 79em) {
+  .result {
+    margin-inline: 5rem;
+  }
+}
+
+@media only screen and (max-width: 45.81em) {
+  .result {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    padding: 1.9rem 0;
+  }
+}
+
 .result__input {
   color: #35323e;
   max-width: 70%;
+  word-wrap: break-word;
+}
+
+@media only screen and (max-width: 45.81em) {
+  .result__input {
+    max-width: 100%;
+    width: 100%;
+    padding-inline: 2rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 2px solid rgba(191, 191, 191, 0.3);
+  }
 }
 
 .result__link {
@@ -736,11 +774,27 @@ button {
   color: #2acfcf;
 }
 
+@media only screen and (max-width: 45.81em) {
+  .result__link {
+    margin-left: 0;
+    padding: 1.5rem 2rem;
+  }
+}
+
 .result__btn {
   border-radius: 6px;
   font-size: 1.8rem;
   width: 11.5rem;
   padding-inline: 0;
+}
+
+@media only screen and (max-width: 45.81em) {
+  .result__btn {
+    margin-left: 0;
+    padding-block: 1.4rem;
+    margin-inline: 2rem;
+    width: calc(100% - 4rem);
+  }
 }
 
 .cards {

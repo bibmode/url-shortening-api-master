@@ -52,7 +52,7 @@
 
     @include respond(tablet-sm) {
       width: 100%;
-      padding: 1.5rem 3.5rem;
+      padding: 1.5rem 1.8rem;
       margin-bottom: 2rem;
     }
 
@@ -66,6 +66,11 @@
     font-size: 2.1rem;
     border-radius: 0.6rem;
     padding-inline: 3.5rem;
+
+    @include respond(tablet-sm) {
+      font-size: 2.5rem;
+      padding-block: 1.3rem;
+    }
   }
 
   &__error {
