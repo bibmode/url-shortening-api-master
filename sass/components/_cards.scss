@@ -15,11 +15,24 @@
     grid-column: 2 / 5;
     position: absolute;
     top: 42%;
+
+    @include respond(tablet-sm) {
+      top: 0;
+      width: 1rem;
+      height: 100%;
+      justify-self: center;
+      transform: translateX(-2.4rem);
+    }
   }
 
   @include respond(tablet) {
     grid-template-columns: 2rem repeat(3, min-content) 2rem;
     margin-block: 5rem;
+  }
+
+  @include respond(tablet-sm) {
+    grid-template-columns: 2rem calc(100vw - 10rem) 2rem;
+    grid-row-gap: 3rem;
   }
 }
 
@@ -54,6 +67,16 @@
     margin-top: 8rem;
   }
 
+  &--1,
+  &--2,
+  &--3 {
+    @include respond(tablet-sm) {
+      width: 100%;
+      grid-column: 2 / span 1;
+      text-align: center;
+    }
+  }
+
   &__logo {
     background-color: $color-dark-violet;
     background-size: contain;
@@ -67,6 +90,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include respond(tablet-sm) {
+      align-self: center;
+    }
   }
 
   &__title {

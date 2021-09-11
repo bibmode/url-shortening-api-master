@@ -15,4 +15,10 @@
       @content;
     }
   }
+
+  @if ($breakpoint == "tablet-sm") {
+    @media only screen and (max-width: 45.81em) {
+      @content;
+    }
+  }
 }
