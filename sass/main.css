@@ -1,3 +1,47 @@
+@-webkit-keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .btn-cyan {
   color: #fff;
   background-color: #2acfcf;
@@ -126,6 +170,9 @@ body {
           align-items: center;
   padding: 6rem 13rem;
   padding-bottom: 8rem;
+  opacity: 0;
+  -webkit-animation: 1s ease-in 2s showUp forwards;
+          animation: 1s ease-in 2s showUp forwards;
 }
 
 @media only screen and (max-width: 79em) {
@@ -332,6 +379,9 @@ body {
       -ms-grid-row-align: end;
       align-self: end;
   z-index: 50;
+  opacity: 0;
+  -webkit-animation: 1s ease-in 2s slideDown forwards;
+          animation: 1s ease-in 2s slideDown forwards;
 }
 
 @media only screen and (max-width: 79em) {
@@ -386,6 +436,9 @@ body {
   font-weight: 500;
   color: #9e9aa7;
   max-width: 90%;
+  opacity: 0;
+  -webkit-animation: 1s ease-in 1s slideDown forwards;
+          animation: 1s ease-in 1s slideDown forwards;
 }
 
 @media only screen and (max-width: 53.19em) {
@@ -413,6 +466,8 @@ body {
       align-self: start;
   -ms-grid-column-align: start;
       justify-self: start;
+  -webkit-animation: 1s ease-in slideDown;
+          animation: 1s ease-in slideDown;
 }
 
 @media only screen and (max-width: 53.19em) {
@@ -429,6 +484,9 @@ body {
 .header__illustration {
   grid-column: 3 / -1;
   grid-row: 1 / -1;
+  opacity: 0;
+  -webkit-animation: 2s ease-in 2s showUp forwards;
+          animation: 2s ease-in 2s showUp forwards;
 }
 
 @media only screen and (max-width: 53.19em) {
@@ -747,6 +805,9 @@ button {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  opacity: 0;
+  -webkit-animation: 1s ease-in 3s showUp forwards;
+          animation: 1s ease-in 3s showUp forwards;
 }
 
 @media only screen and (max-width: 79em) {

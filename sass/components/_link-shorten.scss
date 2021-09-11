@@ -16,6 +16,9 @@
 
   position: relative;
 
+  opacity: 0;
+  animation: 1s ease-in 3s showUp forwards;
+
   @include respond(tablet-big) {
     margin: 0 5rem;
   }

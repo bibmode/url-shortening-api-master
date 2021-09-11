@@ -6,6 +6,8 @@
   align-items: center;
   padding: 6rem 13rem;
   padding-bottom: 8rem;
+  opacity: 0;
+  animation: 1s ease-in 2s showUp forwards;
 
   @include respond(tablet-big) {
     padding-inline: 6rem;
