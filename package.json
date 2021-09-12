@@ -1,0 +1,24 @@
+{
+  "name": "url-shortening-api-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)",
+  "main": "animation.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibmode/url-shortening-api-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bibmode/url-shortening-api-master/issues"
+  },
+  "homepage": "https://github.com/bibmode/url-shortening-api-master#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

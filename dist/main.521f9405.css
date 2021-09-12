@@ -570,7 +570,7 @@ body {
 
 .boost {
   background-color: #3b3054;
-  background-image: url(../images/bg-boost-desktop.svg);
+  background-image: url(/bg-boost-desktop.e83c3f48.svg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5.4rem 1rem;
@@ -787,7 +787,7 @@ button {
   height: -moz-max-content;
   height: max-content;
   padding-block: 5rem;
-  background-image: url(../images/bg-shorten-desktop.svg);
+  background-image: url(/bg-shorten-desktop.b98b5bc1.svg);
   background-color: #3b3054;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1312,4 +1312,6 @@ button {
   font-size: 2.3rem;
   padding-block: 1rem;
 }
-/*# sourceMappingURL=main.css.map */
+
+
+/*# sourceMappingURL=/main.521f9405.css.map */
