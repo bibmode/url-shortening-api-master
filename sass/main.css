@@ -380,8 +380,8 @@ body {
       align-self: end;
   z-index: 50;
   opacity: 0;
-  -webkit-animation: 1s ease-in 2s slideDown forwards;
-          animation: 1s ease-in 2s slideDown forwards;
+  -webkit-animation: 1s ease-in slideDown forwards;
+          animation: 1s ease-in slideDown forwards;
 }
 
 @media only screen and (max-width: 79em) {
@@ -466,8 +466,9 @@ body {
       align-self: start;
   -ms-grid-column-align: start;
       justify-self: start;
-  -webkit-animation: 1s ease-in slideDown;
-          animation: 1s ease-in slideDown;
+  opacity: 0;
+  -webkit-animation: 1s ease-in 2s slideDown forwards;
+          animation: 1s ease-in 2s slideDown forwards;
 }
 
 @media only screen and (max-width: 53.19em) {
@@ -542,6 +543,7 @@ body {
 
 .statistics__title {
   padding-inline: 3rem;
+  opacity: 0;
 }
 
 .statistics__text {
@@ -549,6 +551,7 @@ body {
   width: 37%;
   color: #9e9aa7;
   margin-bottom: 3rem;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 62.94em) {
@@ -1075,6 +1078,7 @@ button {
   width: 100%;
   margin-block: 8rem;
   position: relative;
+  opacity: 0;
 }
 
 .cards::before {

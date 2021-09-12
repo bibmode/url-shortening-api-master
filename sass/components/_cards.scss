@@ -7,6 +7,8 @@
   margin-block: 8rem;
   position: relative;
 
+  opacity: 0;
+
   &::before {
     content: "";
     width: 100%;

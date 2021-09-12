@@ -54,7 +54,7 @@
     align-self: end;
     z-index: 50;
     opacity: 0;
-    animation: 1s ease-in 2s slideDown forwards;
+    animation: 1s ease-in slideDown forwards;
 
     @include respond(tablet-big) {
       font-size: 6rem;
@@ -112,7 +112,8 @@
   &__button {
     align-self: start;
     justify-self: start;
-    animation: 1s ease-in slideDown;
+    opacity: 0;
+    animation: 1s ease-in 2s slideDown forwards;
 
     @include respond(tablet-mid) {
       align-self: center;
