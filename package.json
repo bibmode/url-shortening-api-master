@@ -20,5 +20,8 @@
   "homepage": "https://github.com/bibmode/url-shortening-api-master#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
-  }
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
 }
