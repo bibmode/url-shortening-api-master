@@ -47,7 +47,7 @@ Users should be able to:
 - SCSS
 - Flexbox
 - CSS Grid
-- -Vanilla Javascript
+- Vanilla Javascript
 - [Shrtco API](https://app.shrtco.de/)
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
