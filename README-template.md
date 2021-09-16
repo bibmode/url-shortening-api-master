@@ -1,6 +1,6 @@
 # Frontend Mentor - Shortly URL shortening API Challenge solution
 
-This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). 
 
 ## Table of contents
 
@@ -33,15 +33,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+[![Screenshot-2021-09-16-at-22-57-22-Frontend-Mentor-Shortly-URL-shortening-API-Challenge.jpg](https://i.postimg.cc/6psnyZgD/Screenshot-2021-09-16-at-22-57-22-Frontend-Mentor-Shortly-URL-shortening-API-Challenge.jpg)](https://postimg.cc/RNRNYWMR)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+[![Screenshot-2021-09-16-at-23-00-58-Frontend-Mentor-Shortly-URL-shortening-API-Challenge.jpg](https://i.postimg.cc/5t4gpG1B/Screenshot-2021-09-16-at-23-00-58-Frontend-Mentor-Shortly-URL-shortening-API-Challenge.jpg)](https://postimg.cc/cvzfLFvC)
 
 ### Links
 
